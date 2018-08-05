@@ -20,13 +20,11 @@
             <th>First Name</th>
             <th>Last Name</th>
             <th>Title</th>
-            <th>Details</th>
             <th>Actions</th>
             <tr ng-repeat="author in authors| filter: autorFilter | orderBy: 'nume'">
                 <td>{{author.nume}}</td>
                 <td>{{author.prenume}}</td>
                 <td>{{author.titlu}}</td>
-                <td>{{author.detalii}}</td>
                 <td>
                     <button class="btn btn-sm btn-primary"
                             ng-click="editAuthor(author.id, $index)">
